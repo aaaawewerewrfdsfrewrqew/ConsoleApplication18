@@ -61,7 +61,7 @@ public:
 
         if (index == -1)
         {
-            cout << "Àáîíåíòà íå çíàéäåíî\n";
+            cout << "ĞĞ±Ğ¾Ğ½ĞµĞ½Ñ‚Ğ° Ğ½Ğµ Ğ·Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ¾\n";
             return;
         }
 
@@ -77,7 +77,7 @@ public:
         abonents = temp;
         countAbonent--;
 
-        cout << "Àáîíåíòà âèäàëåíî\n";
+        cout << "ĞĞ±Ğ¾Ğ½ĞµĞ½Ñ‚Ğ° Ğ²Ğ¸Ğ´Ğ°Ğ»ĞµĞ½Ğ¾\n";
     }
 
     void SearchByName(const string& name) const
@@ -95,7 +95,7 @@ public:
         }
 
         if (!found)
-            cout << "Àáîíåíòà íå çíàéäåíî\n";
+            cout << "ĞĞ±Ğ¾Ğ½ĞµĞ½Ñ‚Ğ° Ğ½Ğµ Ğ·Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ¾\n";
     }
 
     void SearchByPhone(const string& phone) const
@@ -109,14 +109,14 @@ public:
                 return;
             }
         }
-        cout << "Àáîíåíòà íå çíàéäåíî\n";
+        cout << "ĞĞ±Ğ¾Ğ½ĞµĞ½Ñ‚Ğ° Ğ½Ğµ Ğ·Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ¾\n";
     }
 
     void ShowAll() const
     {
         if (countAbonent == 0)
         {
-            cout << "Òåëåôîííà êíèãà ïîğîæíÿ\n";
+            cout << "Ğ¢ĞµĞ»ĞµÑ„Ğ¾Ğ½Ğ½Ğ° ĞºĞ½Ğ¸Ğ³Ğ° Ğ¿Ğ¾Ñ€Ğ¾Ğ¶Ğ½Ñ\n";
             return;
         }
 
@@ -132,18 +132,18 @@ int main()
 {
     PhoneBook pb;
 
-    pb.Add(Abonent("²âàíåíêî ²âàí ²âàíîâè÷", "111111"));
-    pb.Add(Abonent("Ïåòğåíêî Ïåòğî Ïåòğîâè÷", "222222"));
+    pb.Add(Abonent("Ğ†Ğ²Ğ°Ğ½ĞµĞ½ĞºĞ¾ Ğ†Ğ²Ğ°Ğ½ Ğ†Ğ²Ğ°Ğ½Ğ¾Ğ²Ğ¸Ñ‡", "111111"));
+    pb.Add(Abonent("ĞŸĞµÑ‚Ñ€ĞµĞ½ĞºĞ¾ ĞŸĞµÑ‚Ñ€Ğ¾ ĞŸĞµÑ‚Ñ€Ğ¾Ğ²Ğ¸Ñ‡", "222222"));
 
     pb.ShowAll();
 
-    cout << "\nÏîøóê çà Ï²Á:\n";
-    pb.SearchByName("²âàíåíêî ²âàí ²âàíîâè÷");
+    cout << "\nĞŸĞ¾ÑˆÑƒĞº Ğ·Ğ° ĞŸĞ†Ğ‘:\n";
+    pb.SearchByName("Ğ†Ğ²Ğ°Ğ½ĞµĞ½ĞºĞ¾ Ğ†Ğ²Ğ°Ğ½ Ğ†Ğ²Ğ°Ğ½Ğ¾Ğ²Ğ¸Ñ‡");
 
-    cout << "\nÂèäàëåííÿ:\n";
+    cout << "\nĞ’Ğ¸Ğ´Ğ°Ğ»ĞµĞ½Ğ½Ñ:\n";
     pb.Delete("111111");
 
-    cout << "\nÂñ³ àáîíåíòè:\n";
+    cout << "\nĞ’ÑÑ– Ğ°Ğ±Ğ¾Ğ½ĞµĞ½Ñ‚Ğ¸:\n";
     pb.ShowAll();
 
     return 0;
